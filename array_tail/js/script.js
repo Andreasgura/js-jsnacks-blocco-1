@@ -26,13 +26,15 @@ button.addEventListener('click', function(){
         lastFiveNumbers += myArray[i];
     }
     console.log("ultimi 5 numeri "+lastFiveNumbers);
+
+    let numbertoprint = parseInt(prompt(`Quanti numeri dell'\Array vuoi vedere?`))
+    let userRequest = ''
+    if (myArray.length > numbertoprint) {
+        for(let i = 0; i < numbertoprint; i++){
+            userRequest += myArray[i];
+        }
+        console.log("numeri richiesti "+userRequest);
+    }
 });
 
-/*
-myArrayNumbers += `${getRndInteger(1, 100)} `  
-    }
-    console.log(myArrayNumbers);
-    let myArray = Array.from(myArrayNumbers);
-    console.log(myArray);
-*/
 
