@@ -21,7 +21,11 @@ button.addEventListener('click', function(){
     myArray.push(myArrayNumbers)
     }
     console.log(myArray);
-    
+    let lastFiveNumbers = ""
+    for(let i = myArray.length - 5; i < myArray.length; i++){
+        lastFiveNumbers += myArray[i];
+    }
+    console.log("ultimi 5 numeri "+lastFiveNumbers);
 });
 
 /*
