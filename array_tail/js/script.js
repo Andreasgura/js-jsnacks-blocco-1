@@ -9,7 +9,7 @@ Probabilmente conviene controllare che il numero di elementi della coda non sia 
 
 let text = document.getElementById('text');
 let button = document.querySelector('.btn');
-
+let myArray = [];
 let myArrayNumbers = ''
 console.log(myArrayNumbers);
 button.addEventListener('click', function(){
@@ -17,11 +17,18 @@ button.addEventListener('click', function(){
    let arrayLenght = parseInt(text.value);
    console.log(arrayLenght);
    for(let i = 0; i < arrayLenght; i++){
-    myArrayNumbers += `${getRndInteger(1, 100)} `  
+    myArrayNumbers = `${getRndInteger(1, 100)} `
+    myArray.push(myArrayNumbers)
+    }
+    console.log(myArray);
+    
+});
+
+/*
+myArrayNumbers += `${getRndInteger(1, 100)} `  
     }
     console.log(myArrayNumbers);
     let myArray = Array.from(myArrayNumbers);
     console.log(myArray);
-});
-
+*/
 
